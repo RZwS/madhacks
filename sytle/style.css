@@ -55,3 +55,18 @@ html {
     display: block;
     line-height: 0;
 }
+
+.cloth {
+    z-index: 2;
+    /* display: inherit; */
+    /* position: absolute; */
+}
+
+.bucky {
+    /* z-index: 1; */
+    position: absolute;
+}
+
+.ab-class {
+    position: absolute;
+}

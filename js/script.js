@@ -7,3 +7,8 @@ $("#btn-start").click(function (e) {
     begin_draw();
 });
 
+function select_cloth(e) {
+    console.log(e.target.id);
+    
+}
+
