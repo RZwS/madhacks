@@ -1,15 +1,3 @@
-class cloth {
-    constructor (m_class, id, image, carbon, current_wear) {
-        this.m_class = m_class;
-        this.id = id;
-        this.image = image;
-        this.carbon = carbon;
-        this.current_wear = current_wear;
-    }
-}
-
-
-
 class body {
     constructor (skin, background, transportation, hat, cloth, shoes, decoration) {
         this.skin = skin;

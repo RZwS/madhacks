@@ -1,4 +1,5 @@
 var current_location = 0;
+var bucky = new body(0, -1, -1, -1, -1, -1, -1);
 
 $("#btn-start").click(function (e) { 
     $("#btn-start").toggle();
@@ -45,23 +46,28 @@ function select_cloth(e) {
     } else if (current_location == 1) { // background
         switch (id) {
             case 0:
+                bucky.background = id;
                 document.body.style.background = 
                     "url(./../img/background/background_luxuryHotel.png)";
                 break;
             case 1:
+                bucky.background = id;
                 document.body.style.background = 
                     "url(./../img/background/background_nature.png)";
                 break;
             case 2:
+                bucky.background = id;
                 document.body.style.background = 
                     "url(./../img/background/background_rural.png)";
                 break;
             case 3:
+                bucky.background = id;
                 document.body.style.background = 
                     "url(./../img/background/background_urban.png)";
                 break;
             case 4:
                 document.body.style.background = null;
+                bucky.background = -1;
                 break;
             case 5:
                 current_location = 0;
@@ -72,26 +78,21 @@ function select_cloth(e) {
                 break;
         }
     } else if (current_location == 2) { // transportation
-        current_location = 0;
-        switch (id) {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            case 5:
-                break;
-            default:
-                console.log("error");
-                break;
+        console.log(id);
+        bucky.transportation = id;
+        if (id < 6) {
+            bucky.transportation = id;
+            $(".car").hide();
+            $("#car-img-" + (id + 1)).toggle();
+        } else if (id == 6) {
+            bucky.transportation = -1;
+        } else {
+            current_location = 0;
+            update_square_img();
         }
 
     } else if (current_location == 3) { // hat
+        bucky.hat = id;
         current_location = 0;
         switch (id) {
             case 0:
@@ -113,9 +114,11 @@ function select_cloth(e) {
         
     } else if (current_location == 4) { // cloth
         if (id <= 3) {
+            bucky.cloth = id;
             $(".cloth").hide();
             $("#cloth-img-" + (id + 1)).toggle();
         } else if (id == 4) {
+            bucky.cloth = -1;
             $(".cloth").hide();
         } else if (id == 5) {
             current_location = 0;
@@ -124,9 +127,11 @@ function select_cloth(e) {
 
     } else if (current_location == 5) { // shoes
         if (id <= 3) {
+            bucky.shoes = id;
             $(".shoes").hide();
             $("#shoes-img-" + (id + 1)).toggle();
         } else if (id == 4) {
+            bucky.shoes = -1;
             $(".shoes").hide();
         } else if (id == 5) {
             current_location = 0;
@@ -135,9 +140,11 @@ function select_cloth(e) {
 
     } else if (current_location == 6) { // skin
         if (id <= 2) {
+            bucky.skin = id;
             $(".bucky").hide();
             $("#bucky-" + (id + 1)).toggle();
         } else if (id == 3) {
+            bucky.skin = -1;
             $(".bucky").hide();
         } else if (id == 4) {
             current_location = 0;
