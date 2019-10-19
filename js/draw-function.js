@@ -4,11 +4,29 @@ function update_square_img(type) {
 
 function draw_clothing() {
     $("#column-left").append(
-        "<div id='cloth-1' class='ab-class'><img src='./../img/outfit/cloth1.PNG'\
+        "<div id='cloth-1' class='ab-class'><img src='./../img/outfit/cloth1.png'\
          class='cloth' id='cloth-img-1'></img></div>");
     $("#cloth-1").css("margin-top", "161px");
     $("#cloth-1").css("margin-left", "-48px");
-    $(".cloth").attr("width", "600px");
+    $("#cloth-img-1").css("width", "600px");
+
+    $("#column-left").append(
+        "<div id='cloth-2' class='ab-class'><img src='./../img/outfit/cloth2.png'\
+         class='cloth' id='cloth-img-2'></img></div>");
+    $("#cloth-2").css("margin-top", "-5px");
+    $("#cloth-2").css("margin-left", "-101px");
+    $("#cloth-img-2").css("width", "800px");
+
+    $("#column-left").append(
+        "<div id='cloth-3' class='ab-class'><img src='./../img/outfit/cloth1.png'\
+         class='cloth' id='cloth-img-3'></img></div>");
+    $("#cloth-3").css("margin-top", "161px");
+    $("#cloth-3").css("margin-left", "-48px");
+
+
+    
+    $(".cloth").hide();
+    $("#cloth-img-2").toggle();
 }
 
 
