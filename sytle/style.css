@@ -50,6 +50,7 @@ html {
     display: inline-block;
     background-size:100% 100%;
     background-repeat:no-repead;
+    z-index: 99;
 }
 
 
@@ -58,6 +59,10 @@ html {
     margin: -4px;
     display: block;
     line-height: 0;
+}
+
+.shoes {
+    z-index: 3;
 }
 
 .cloth {
