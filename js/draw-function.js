@@ -1,5 +1,43 @@
 function update_square_img(type) {
 
+    var imgList;
+    type = 1;  
+    if (type == 0) { // home
+        imgList = [
+            
+        ]
+    } else if (type == 1) { // background
+        imgList = [
+            "./../img/background/background_luxuryHotel.png", 
+            "./../img/background/background_nature.png",
+            "./../img/background/background_rural.png", 
+            "./../img/background/background_urban.png"
+        ];
+    } else if (type == 2) { // transportation
+
+    } else if (type == 3) { // hat
+
+    } else if (type == 4) { // cloth
+        imgList = [
+            "./../img/outfit/cloth1.png",
+            "./../img/outfit/cloth2.png",
+            "./../img/outfit/cloth3.png",
+            "./../img/outfit/cloth4.png"
+        ];
+    } else if (type == 5) { // shoes
+
+    } else if (type == 6) { // skin
+        imgList = [
+            "./../img/bucky/buckyBlack.png",
+            "./../img/bucky/buckyBrown.png",
+            "./../img/bucky/buckyYellow.png"
+        ];
+    }
+
+    for (var i = 0; i < imgList.length; i++) {
+        $("#square-" + i).css("background-image", "url('" + imgList[i] + "')");
+        
+    }
 }
 
 function draw_clothing() {
@@ -47,9 +85,9 @@ function begin_right() {
 
 function begin_draw() {
     $("#column-left").html(
-        "<img class=\"bucky\" id=\"bucky-black\"src=\"./../img/bucky/bucky-black.png\"></img>\
-        <img class=\"bucky\" id=\"bucky-brown\"src=\"./../img/bucky/bucky-brown.png\"></img>\
-        <img class=\"bucky\" id=\"bucky-yellow\"src=\"./../img/bucky/bucky-yellow.png\"></img>"
+        "<img class=\"bucky\" id=\"bucky-black\"src=\"./../img/bucky/buckyBlack.png\"></img>\
+        <img class=\"bucky\" id=\"bucky-brown\"src=\"./../img/bucky/buckyBrown.png\"></img>\
+        <img class=\"bucky\" id=\"bucky-yellow\"src=\"./../img/bucky/buckyYellow.png\"></img>"
         );
     $(".bucky").attr("width", "600px");
     $(".bucky").hide();
