@@ -69,7 +69,7 @@ function select_cloth(e) {
                 break;
         }
 
-    } else if (current_location == 6) { // hat
+    } else if (current_location == 3) { // hat
         current_location = 0;
         switch (id) {
             case 0:
@@ -102,16 +102,16 @@ function select_cloth(e) {
 
     } else if (current_location == 5) { // shoes
         if (id <= 3) {
-            $(".cloth").hide();
-            $("#cloth-img-" + (id + 1)).toggle();
+            $(".shoes").hide();
+            $("#shoes-img-" + (id + 1)).toggle();
         } else if (id == 4) {
-            $(".cloth").hide();
+            $(".shoes").hide();
         } else if (id == 5) {
             current_location = 0;
             update_square_img();
         }
 
-    } else if (current_location == 3) { // skin
+    } else if (current_location == 6) { // skin
         if (id <= 2) {
             $(".bucky").hide();
             $("#bucky-" + (id + 1)).toggle();

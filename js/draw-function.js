@@ -5,10 +5,12 @@ function update_square_img(type) {
     // type = 1;  
     if (type == 0) { // home
         imgList = [
-            "./../img/home/cloth1Icon.png",
-            "./../img/home/cloth2Icon.png",
-            "./../img/home/cloth3Icon.png",
-            "./../img/home/cloth4Icon.png"
+            "./../img/background/background_luxuryHotel.png",
+            null,
+            null,
+            "./../img/outfit/cloth1.png",
+            "./../img/shoes/shoe1.png",
+            "./../img/bucky/buckyBlack.png"
         ];
     } else if (type == 1) { // background
         imgList = [
@@ -43,7 +45,11 @@ function update_square_img(type) {
         ];
     }
 
-    for (var i = 0; i < imgList.length; i++) {
+    for (var i = imgList.length; i < 8; i++) {
+        imgList.push(null);
+    } // repair
+
+    for (var i = 0; i < 8; i++) {
         $("#square-" + i).css("background-image", "url('" + imgList[i] + "')");
     }
 }
@@ -120,7 +126,7 @@ function begin_right() {
     $("#clothing-type").html("<p>Hat</p>");
     console.log("df");
 
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 4; i++) {
         for (var j = 0; j < 2; j++) {
             $("#column-right").append("<div class='square' id='square-" + (i * 2 + j) + "'></div>");
         }
