@@ -1,8 +1,3 @@
-
-
-
-
-
 $("#btn-start").click(function (e) { 
     $("#btn-start").toggle();
     $("#main-wrap").html(
@@ -11,4 +6,9 @@ $("#btn-start").click(function (e) {
     $("#wrap-right").html("<div id=\"column-right\"></div>");
     begin_draw();
 });
+
+function select_cloth(e) {
+    console.log(e.target.id);
+    
+}
 
