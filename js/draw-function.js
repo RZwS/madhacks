@@ -1,5 +1,6 @@
 function update_square_img(type) {
 
+    type = current_location;
     var imgList;
     type = 1;  
     if (type == 0) { // home
@@ -36,7 +37,6 @@ function update_square_img(type) {
 
     for (var i = 0; i < imgList.length; i++) {
         $("#square-" + i).css("background-image", "url('" + imgList[i] + "')");
-        
     }
 }
 
