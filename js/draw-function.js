@@ -2,7 +2,6 @@ function update_square_img(type) {
 
     type = current_location;
     var imgList;
-    // type = 1;  
     if (type == 0) { // home
         imgList = [
             "./../img/home/colorIcon.png",
@@ -22,6 +21,16 @@ function update_square_img(type) {
             "./../img/home/homeIcon.png"
         ];
     } else if (type == 2) { // transportation
+        imgList = [
+            "./../img/transportation/1.png",
+            "./../img/transportation/2.png",
+            "./../img/transportation/3.png",
+            "./../img/transportation/4.png",
+            "./../img/transportation/5.png",
+            "./../img/transportation/6.png",
+            "./../img/home/resetIcon.png",
+            "./../img/home/homeIcon.png"
+        ];
 
     } else if (type == 3) { // hat
 
@@ -60,6 +69,53 @@ function update_square_img(type) {
     for (var i = 0; i < 8; i++) {
         $("#square-" + i).css("background-image", "url('" + imgList[i] + "')");
     }
+}
+
+function draw_car() {
+    $("#column-left").append(
+        "<div id='car-1' class='ab-class'><img src='./../img/transportation/1.png'\
+        class = 'car' id='car-img-1'></img></div>");
+    $("#car-img-1").css("width", "400px");
+    $("#car-1").css("margin-top", "230px");
+    $("#car-1").css("margin-left", "255px");
+
+    $("#column-left").append(
+        "<div id='car-2' class='ab-class'><img src='./../img/transportation/2.png'\
+        class = 'car' id='car-img-2'></img></div>");
+    $("#car-img-2").css("width", "300px");
+    $("#car-2").css("margin-top", "283px");
+    $("#car-2").css("margin-left", "283px");
+
+    $("#column-left").append(
+        "<div id='car-3' class='ab-class'><img src='./../img/transportation/3.png'\
+        class = 'car' id='car-img-3'></img></div>");
+    $("#car-img-3").css("width", "400px");
+    $("#car-3").css("margin-top", "243px");
+    $("#car-3").css("margin-left", "209px");
+
+    $("#column-left").append(
+        "<div id='car-4' class='ab-class'><img src='./../img/transportation/4.png'\
+        class = 'car' id='car-img-4'></img></div>");
+    $("#car-img-4").css("width", "400px");
+    $("#car-4").css("margin-top", "213px");
+    $("#car-4").css("margin-left", "209px");
+
+    $("#column-left").append(
+        "<div id='car-5' class='ab-class'><img src='./../img/transportation/5.png'\
+        class = 'car' id='car-img-5'></img></div>");
+    $("#car-img-5").css("width", "400px");
+    $("#car-5").css("margin-top", "243px");
+    $("#car-5").css("margin-left", "209px");
+
+    $("#column-left").append(
+        "<div id='car-6' class='ab-class'><img src='./../img/transportation/6.png'\
+        class = 'car' id='car-img-6'></img></div>");
+    $("#car-img-6").css("width", "400px");
+    $("#car-6").css("margin-top", "263px");
+    $("#car-6").css("margin-left", "209px");
+
+    $(".car").hide();
+    $("#car-img-2").toggle();
 }
 
 function draw_shoes() {
@@ -134,7 +190,7 @@ function begin_right() {
     $("#clothing-type").html("<p>Hat</p>");
     console.log("df");
 
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 4; i++) {
         for (var j = 0; j < 2; j++) {
             $("#column-right").append("<div class='square' id='square-" + (i * 2 + j) + "'></div>");
         }
@@ -158,6 +214,7 @@ function begin_draw() {
     begin_right();
     draw_shoes();
     draw_clothing();
+    draw_car();
     update_square_img();
 }
 
