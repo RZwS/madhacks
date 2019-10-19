@@ -5,19 +5,21 @@ function update_square_img(type) {
     // type = 1;  
     if (type == 0) { // home
         imgList = [
-            "./../img/background/background_luxuryHotel.png",
-            null,
-            null,
-            "./../img/outfit/cloth1.png",
-            "./../img/shoes/shoe1.png",
-            "./../img/bucky/buckyBlack.png"
+            "./../img/home/colorIcon.png",
+            "./../img/home/roomIcon.png",
+            "./../img/home/shoesIcon.png",
+            "./../img/home/clothIcon.png",
+            "./../img/home/decorationIcon.png",
+            "./../img/home/transportationIcon.png"
         ];
     } else if (type == 1) { // background
         imgList = [
             "./../img/background/background_luxuryHotel.png", 
             "./../img/background/background_nature.png",
             "./../img/background/background_rural.png", 
-            "./../img/background/background_urban.png"
+            "./../img/background/background_urban.png",
+            "./../img/home/resetIcon.png",
+            "./../img/home/homeIcon.png"
         ];
     } else if (type == 2) { // transportation
 
@@ -25,10 +27,12 @@ function update_square_img(type) {
 
     } else if (type == 4) { // cloth
         imgList = [
-            "./../img/outfit/cloth1.png",
-            "./../img/outfit/cloth2.png",
-            "./../img/outfit/cloth3.png",
-            "./../img/outfit/cloth4.png"
+            "./../img/outfit/cloth1Icon.png",
+            "./../img/outfit/cloth2Icon.png",
+            "./../img/outfit/cloth3Icon.png",
+            "./../img/outfit/cloth4Icon.png",
+            "./../img/home/resetIcon.png",
+            "./../img/home/homeIcon.png"
         ];
     } else if (type == 5) { // shoes
         imgList = [
@@ -36,12 +40,16 @@ function update_square_img(type) {
             "./../img/shoes/shoe2.png",
             "./../img/shoes/shoe3.png",
             "./../img/shoes/shoe4.png",
+            "./../img/home/resetIcon.png",
+            "./../img/home/homeIcon.png"
         ];
     } else if (type == 6) { // skin
         imgList = [
             "./../img/bucky/buckyBlack.png",
             "./../img/bucky/buckyBrown.png",
-            "./../img/bucky/buckyYellow.png"
+            "./../img/bucky/buckyYellow.png",
+            "./../img/home/resetIcon.png",
+            "./../img/home/homeIcon.png"
         ];
     }
 
@@ -126,7 +134,7 @@ function begin_right() {
     $("#clothing-type").html("<p>Hat</p>");
     console.log("df");
 
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 3; i++) {
         for (var j = 0; j < 2; j++) {
             $("#column-right").append("<div class='square' id='square-" + (i * 2 + j) + "'></div>");
         }

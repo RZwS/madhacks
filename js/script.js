@@ -18,7 +18,29 @@ function select_cloth(e) {
     // current_location = 1;
 
     if (current_location == 0) { // home
-        current_location = id + 1;
+        switch (id) {
+            case 0:
+                current_location = 6;
+                break;
+            case 1:
+                current_location = 1;
+                break;
+            case 2:
+                current_location = 5;
+                break;
+            case 3:
+                current_location = 4;
+                break;
+            case 4:
+                current_location = 3;
+                break;
+            case 5:
+                current_location = 2;
+                break;
+            default:
+                console.log("error");
+                break;
+        }
         update_square_img();
     } else if (current_location == 1) { // background
         switch (id) {
