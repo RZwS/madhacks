@@ -159,6 +159,6 @@ function show_activity() {
     // $("#final-evalu").append("<div class='' id='evalu-chart'></div>");
     create_pi();
     $(".canvasjs-chart-container").css("position", "absolute");
-    $(".canvasjs-chart-container").css("top", "190px");
+    $(".canvasjs-chart-container").css("top", "200px");
     $(".canvasjs-chart-container").css("left", "-150px");
 }

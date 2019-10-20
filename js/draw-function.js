@@ -115,28 +115,28 @@ function draw_car() {
         class = 'car' id='car-img-3'></img></div>");
     $("#car-img-3").css("width", "400px");
     $("#car-3").css("margin-top", "243px");
-    $("#car-3").css("margin-left", "209px");
+    $("#car-3").css("margin-left", "269px");
 
     $("#column-left").append(
         "<div id='car-4' class='ab-class'><img src='./../img/transportation/4.png'\
         class = 'car' id='car-img-4'></img></div>");
     $("#car-img-4").css("width", "400px");
     $("#car-4").css("margin-top", "213px");
-    $("#car-4").css("margin-left", "209px");
+    $("#car-4").css("margin-left", "269px");
 
     $("#column-left").append(
         "<div id='car-5' class='ab-class'><img src='./../img/transportation/5.png'\
         class = 'car' id='car-img-5'></img></div>");
     $("#car-img-5").css("width", "400px");
     $("#car-5").css("margin-top", "243px");
-    $("#car-5").css("margin-left", "209px");
+    $("#car-5").css("margin-left", "269px");
 
     $("#column-left").append(
         "<div id='car-6' class='ab-class'><img src='./../img/transportation/6.png'\
         class = 'car' id='car-img-6'></img></div>");
     $("#car-img-6").css("width", "400px");
     $("#car-6").css("margin-top", "263px");
-    $("#car-6").css("margin-left", "209px");
+    $("#car-6").css("margin-left", "269px");
 
     $(".car").hide();
 }
