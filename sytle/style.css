@@ -1,8 +1,11 @@
 html {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background-color: #9aa5b0;
-    background-size:100% 100%;
-    background-repeat:no-repead;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #main-wrap {

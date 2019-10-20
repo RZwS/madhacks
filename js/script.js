@@ -48,22 +48,30 @@ function select_cloth(e) {
             case 0:
                 bucky.background = id;
                 document.body.style.background = 
-                    "url(./../img/background/background_luxuryHotel.png)";
+                    "url(./../img/background/background_luxuryHotel.png) \
+                    no-repeat center center fixed";
+                document.body.style.backgroundSize = "cover";
                 break;
             case 1:
                 bucky.background = id;
                 document.body.style.background = 
-                    "url(./../img/background/background_nature.png)";
+                    "url(./../img/background/background_nature.png) \
+                    no-repeat center center fixed";
+                    document.body.style.backgroundSize = "cover";
                 break;
             case 2:
                 bucky.background = id;
                 document.body.style.background = 
-                    "url(./../img/background/background_rural.png)";
+                    "url(./../img/background/background_rural.png) \
+                    no-repeat center center fixed";
+                    document.body.style.backgroundSize = "cover";
                 break;
             case 3:
                 bucky.background = id;
                 document.body.style.background = 
-                    "url(./../img/background/background_urban.png)";
+                    "url(./../img/background/background_urban.png) \
+                    no-repeat center center fixed";
+                    document.body.style.backgroundSize = "cover";
                 break;
             case 4:
                 document.body.style.background = null;
@@ -93,12 +101,15 @@ function select_cloth(e) {
 
     } else if (current_location == 3) { // hat
         if (id <= 5) {
-            bucky.hat = id;
-            // $(".cloth").hide();
-            // $("#cloth-img-" + (id + 1)).toggle();
+            $("#dec-img-" + (id + 1)).toggle();
+            if (bucky.hat.indexOf(id) > -1) {
+                bucky.hat.splice(bucky.hat.indexOf(id), 1);
+            } else {
+                bucky.hat.push(id);
+            }
         } else if (id == 6) {
-            bucky.hat = -1;
-            $(".cloth").hide();
+            bucky.hat = [];
+            $(".dec").hide();
         } else if (id == 7) {
             current_location = 0;
             update_square_img();
