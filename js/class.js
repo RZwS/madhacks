@@ -3,7 +3,7 @@ class body {
         this.skin = skin;
         this.background = background;
         this.transportation = transportation;
-        this.hat = hat;
+        this.hat = [];
         this.cloth = cloth;
         this.shoes = shoes;
         this.carbon = [

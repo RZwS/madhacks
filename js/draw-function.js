@@ -95,6 +95,53 @@ function update_square_img(type) {
     }
 }
 
+function draw_decoration() {
+    $("#column-left").append(
+        "<div id='dec-1' class='ab-class'><img src='./../img/decoration/flag.png'\
+        class = 'dec' id='dec-img-1'></img></div>");
+    $("#dec-img-1").css("width", "300px");
+    $("#dec-1").css("margin-top", "-100px");
+    $("#dec-1").css("margin-left", "0px");
+
+    $("#column-left").append(
+        "<div id='dec-2' class='ab-class'><img src='./../img/decoration/flowe.png'\
+        class = 'dec' id='dec-img-2'></img></div>");
+    $("#dec-img-2").css("width", "200px");
+    $("#dec-2").css("margin-top", "240px");
+    $("#dec-2").css("margin-left", "329px");
+
+    $("#column-left").append(
+        "<div id='dec-3' class='ab-class'><img src='./../img/decoration/football.png'\
+        class = 'dec' id='dec-img-3'></img></div>");
+    $("#dec-img-3").css("width", "150px");
+    $("#dec-3").css("margin-top", "310px");
+    $("#dec-3").css("margin-left", "330px");
+
+    $("#column-left").append(
+        "<div id='dec-4' class='ab-class'><img src='./../img/decoration/hat.png'\
+        class = 'dec' id='dec-img-4'></img></div>");
+    $("#dec-img-4").css("width", "250px");
+    $("#dec-4").css("margin-top", "-46px");
+    $("#dec-4").css("margin-left", "92px");
+
+    $("#column-left").append(
+        "<div id='dec-5' class='ab-class'><img src='./../img/decoration/hat2.png'\
+        class = 'dec' id='dec-img-5'></img></div>");
+    $("#dec-img-5").css("width", "200px");
+    $("#dec-5").css("margin-top", "-60px");
+    $("#dec-5").css("margin-left", "230px");
+
+    $("#column-left").append(
+        "<div id='dec-6' class='ab-class'><img src='./../img/decoration/pikachu.png'\
+        class = 'dec' id='dec-img-6'></img></div>");
+    $("#dec-img-6").css("width", "200px");
+    $("#dec-6").css("margin-top", "358px");
+    $("#dec-6").css("margin-left", "55px");
+
+    $(".dec").hide();
+    // $("#dec-img-6").toggle();
+}
+
 function draw_car() {
     $("#column-left").append(
         "<div id='car-1' class='ab-class'><img src='./../img/transportation/1.png'\
@@ -240,6 +287,7 @@ function begin_draw() {
     draw_shoes();
     draw_clothing();
     draw_car();
+    draw_decoration();
     update_square_img();
 }
 
