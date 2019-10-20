@@ -192,30 +192,30 @@ function draw_shoes() {
     $("#column-left").append(
         "<div id='shoes-1' class='ab-class'><img src='./img/shoes/shoe1.png'\
         class = 'shoes' id='shoes-img-1'></img></div>");
-    $("#shoes-img-1").css("width", "450px");
-    $("#shoes-1").css("margin-top", "315px");
-    $("#shoes-1").css("margin-left", "56px");
+    $("#shoes-img-1").css("width", "200px");
+    $("#shoes-1").css("margin-top", "462px");
+    $("#shoes-1").css("margin-left", "186px");
 
     $("#column-left").append(
         "<div id='shoes-2' class='ab-class'><img src='./img/shoes/shoe2.png'\
         class = 'shoes' id='shoes-img-2'></img></div>");
-    $("#shoes-img-2").css("width", "450px");
-    $("#shoes-2").css("margin-top", "309px");
-    $("#shoes-2").css("margin-left", "62px");
+    $("#shoes-img-2").css("width", "250px");
+    $("#shoes-2").css("margin-top", "446px");
+    $("#shoes-2").css("margin-left", "160px");
 
     $("#column-left").append(
         "<div id='shoes-3' class='ab-class'><img src='./img/shoes/shoe3.png'\
         class = 'shoes' id='shoes-img-3'></img></div>");
-    $("#shoes-img-3").css("width", "450px");
-    $("#shoes-3").css("margin-top", "311px");
-    $("#shoes-3").css("margin-left", "57px");
+    $("#shoes-img-3").css("width", "250px");
+    $("#shoes-3").css("margin-top", "447px");
+    $("#shoes-3").css("margin-left", "157px");
 
     $("#column-left").append(
         "<div id='shoes-4' class='ab-class'><img src='./img/shoes/shoe4.png'\
         class = 'shoes' id='shoes-img-4'></img></div>");
-    $("#shoes-img-4").css("width", "450px");
-    $("#shoes-4").css("margin-top", "315px");
-    $("#shoes-4").css("margin-left", "56px");
+    $("#shoes-img-4").css("width", "250px");
+    $("#shoes-4").css("margin-top", "458px");
+    $("#shoes-4").css("margin-left", "161px");
 
     $(".shoes").hide();
 }
