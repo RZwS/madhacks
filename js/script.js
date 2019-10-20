@@ -1,14 +1,39 @@
 var current_location = 0;
 var bucky = new body(0, -1, -1, -1, -1, -1);
 
-$("#btn-start").click(function (e) { 
-    $("#btn-start").toggle();
-    $("#main-wrap").html(
-        "<div class=\"wrap\" id=\"wrap-left\"></div><div class=\"wrap\" id=\"wrap-right\"></div>");
-    $("#wrap-left").html("<div id=\"column-left\"></div>");
-    $("#wrap-right").html("<div id=\"column-right\"></div>");
-    begin_draw();
-});
+$("#main-wrap").html("<div id='b-img'>\
+    <img src='./../img/firstPage/backgroundOrg.png' id='test' class=''></img></div>");
+
+setTimeout(test, 5);
+setTimeout(show_gray_picture, 3000);
+
+function test() {
+    $("#test").addClass("front-img");
+}
+
+function test2() {
+    $("#test2").removeClass("front-img")
+}
+
+function test3() {
+    $("#a-img").prepend("<button type='button' class='ab-class' id='btn-start'></button>");
+    $("#btn-start").click(function (e) { 
+        $("#btn-start").toggle();
+        $("#main-wrap").html(
+            "<div class=\"wrap\" id=\"wrap-left\"></div><div class=\"wrap\" id=\"wrap-right\"></div>");
+        $("#wrap-left").html("<div id=\"column-left\"></div>");
+        $("#wrap-right").html("<div id=\"column-right\"></div>");
+        begin_draw();
+    });
+}
+
+function show_gray_picture() {
+    $("#main-wrap").prepend("<div id='a-img'>\
+        <img src='./../img/firstPage/background.png' id='test2' class='front-img'></img></div>");
+    setTimeout(test2, 5);
+    setTimeout(test3, 3000);
+}
+
 
 function select_cloth(e) {
     // console.log(e.target.id);
