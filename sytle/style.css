@@ -96,11 +96,27 @@ html {
 }
 
 #final-evalu {
-    z-index: 101;
     top: 10px;
     left: 30px;
 }
 
-#final-evalu img {
+#evalu-back {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     width: 1024px;
+}
+
+#final-evalu div {
+    position: absolute;
+    font-size: 24px;
+    left: 320px;
+    top: 200px;
+}
+
+#evalu-logo {
+    position: absolute;
+    width: 300px;
+    left: 650px;
+    top: 300px;
 }

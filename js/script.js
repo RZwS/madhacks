@@ -1,5 +1,5 @@
 var current_location = 0;
-var bucky = new body(0, -1, -1, -1, -1, -1, -1);
+var bucky = new body(0, -1, -1, -1, -1, -1);
 
 $("#btn-start").click(function (e) { 
     $("#btn-start").toggle();
@@ -92,24 +92,16 @@ function select_cloth(e) {
         }
 
     } else if (current_location == 3) { // hat
-        bucky.hat = id;
-        current_location = 0;
-        switch (id) {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            case 5:
-                break;
-            default:
-                console.log("error");
-                break;
+        if (id <= 5) {
+            bucky.hat = id;
+            // $(".cloth").hide();
+            // $("#cloth-img-" + (id + 1)).toggle();
+        } else if (id == 6) {
+            bucky.hat = -1;
+            $(".cloth").hide();
+        } else if (id == 7) {
+            current_location = 0;
+            update_square_img();
         }
         
     } else if (current_location == 4) { // cloth
@@ -156,8 +148,17 @@ function select_cloth(e) {
 }
 
 function show_activity() {
-    $("#main-wrap").append("<div class='ab-class' id='final-evalu'></div>");
-    $("#final-evalu").html("<img src='./../img/mix/report.png'></img>");
+    $("#main-wrap").append("<div id='final-evalu'></div>");
+    $("#final-evalu").html("<img id='evalu-back' src='./../img/mix/report.png'></img>");
     $("#column-left").hide();
     $("#column-right").hide();
+    $("#final-evalu").append("<div id='final-evalu-content'></div>");
+    $("#final-evalu-content").html("<p>Your Carbon estimate is " +
+        bucky.calculate_carbon() + " </p>");
+    $("#final-evalu").append("<img src='./../img/mix/evalu-logo.png' id='evalu-logo'></img>");
+    // $("#final-evalu").append("<div class='' id='evalu-chart'></div>");
+    create_pi();
+    $(".canvasjs-chart-container").css("position", "absolute");
+    $(".canvasjs-chart-container").css("top", "190px");
+    $(".canvasjs-chart-container").css("left", "-150px");
 }
