@@ -16,7 +16,7 @@ function test2() {
 }
 
 function test3() {
-    $("#a-img").prepend("<button type='button' class='ab-class' id='btn-start'></button>");
+    $("#a-img").prepend("<button type='button' class='ab-class hvr-ripple-out' id='btn-start'></button>");
     $("#btn-start").click(function (e) { 
         $("#btn-start").toggle();
         $("#main-wrap").html(
@@ -193,7 +193,7 @@ function show_result(e) {
     $("#column-right").hide();
     $("#activity-B").hide();
     $("#final-evalu").append("<div id='final-evalu-content'></div>");
-    $("#final-evalu-content").html("<p id='evalu-content'>Your Carbon estimate is " +
+    $("#final-evalu-content").html("<p id='evalu-content'>Your Carbon estimation is " +
         bucky.calculate_carbon() + " </p>");
     $("#final-evalu").append("<img src='./img/mix/evalu-logo.png' id='evalu-logo'></img>");
     create_pi();

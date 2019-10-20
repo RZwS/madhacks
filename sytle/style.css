@@ -192,17 +192,19 @@ html {
     z-index: 5;
     background: url("./../img/firstPage/startIcon.png");
     background-size: cover;
-    top: 380px;
-    left: 650px;
-    width: 200px;
-    height: 90px;
+    position: absolute;
+    top: 31vw;
+    left: 53vw;
+    width: 22.5vw;
+    height: 10vw;
 }
 
 #activity-B {
     z-index: 1000;
-    width: 30%;
-    height: 500px;
-    left: 40%; 
+    top: 5vw;
+    width: 37vw;
+    height: 40vw;
+    left: 31vw; 
 }
 
 .activity {
@@ -221,17 +223,57 @@ html {
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
+
 .activity:hover, .activity:focus, .activity:active {
   box-shadow: 0 10px 10px -18px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-
-
-
 .canvasjs-chart-container {
     position: absolute;
     left: 150px;
     top: 200px;
+}
+
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 6px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
 }

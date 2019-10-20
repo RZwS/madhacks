@@ -17,7 +17,7 @@ function draw_activity() {
         "<div id='activity-B' class='ab-class'></div>");
     $("#activity-B").css("background", "url('./img/activity/activityPage.png'");
     $("#activity-B").css("background-size", "cover");
-    $("#activity-B").css("top", "100px");
+    // $("#activity-B").css("top", "100px");
     // $("#activity-B").css("width", "60%");
     // $("#activity-B").css("left", "30%");
     // $("#activity-B").css("height", "60%");
