@@ -15,7 +15,7 @@ function draw_activity() {
     $("#main-wrap").addClass("ab-class");
     $("#main-wrap").append(
         "<div id='activity-B' class='ab-class'></div>");
-    $("#activity-B").css("background", "url('./img/activity/activityPage.png'");
+    $("#activity-B").css("background", "url('./img/Activity/activityPage.png'");
     $("#activity-B").css("background-size", "cover");
     // $("#activity-B").css("top", "100px");
     // $("#activity-B").css("width", "60%");
@@ -24,7 +24,7 @@ function draw_activity() {
    
 
     $("#activity-B").append(
-        "<div id='activity-1' class='activity ab-class'><img src='./img/activity/activity1.png'\
+        "<div id='activity-1' class='activity ab-class'><img src='./img/Activity/activity1.png'\
         class='activity' id='activity-img-1'></img></div>");
     
     // $("#activity-img-1").css("width", "150px");
@@ -32,14 +32,14 @@ function draw_activity() {
     
 
     $("#activity-B").append(
-        "<div id='activity-2' class='activity ab-class'><img src='./img/activity/activity2.png'\
+        "<div id='activity-2' class='activity ab-class'><img src='./img/Activity/activity2.png'\
         class='activity' id='activity-img-2'></img></div>");
     // $("#activity-img-2").css("width", "150px");
     $("#activity-2").css("top", "55%");
        
 
     $("#activity-B").append(
-        "<div id='activity-3' class='activity ab-class'><img src='./img/activity/activity3.png'\
+        "<div id='activity-3' class='activity ab-class'><img src='./img/Activity/activity3.png'\
         class='activity' id='activity-img-3'></img></div>");
     // $("#activity-img-3").css("width", "150px");
     $("#activity-3").css("top", "77%");
