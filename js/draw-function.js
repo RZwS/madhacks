@@ -37,7 +37,7 @@ function update_square_img(type) {
             "./../img/Decoration/flag.png",
             "./../img/Decoration/flowe.png",
             "./../img/Decoration/football.png",
-            "./../img/Decoration/hat.jpg",
+            "./../img/Decoration/hat.png",
             "./../img/Decoration/hat2.png",
             "./../img/Decoration/pikachu.png",
             "./../img/home/resetIcon.png",
