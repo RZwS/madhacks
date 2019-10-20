@@ -155,3 +155,9 @@ function select_cloth(e) {
     }
 }
 
+function show_activity() {
+    $("#main-wrap").append("<div class='ab-class' id='final-evalu'></div>");
+    $("#final-evalu").html("<img src='./../img/mix/report.png'></img>");
+    $("#column-left").hide();
+    $("#column-right").hide();
+}

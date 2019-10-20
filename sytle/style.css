@@ -94,3 +94,13 @@ html {
     background-size:100% 100%;
     background-repeat:no-repead;
 }
+
+#final-evalu {
+    z-index: 101;
+    top: 10px;
+    left: 30px;
+}
+
+#final-evalu img {
+    width: 1024px;
+}

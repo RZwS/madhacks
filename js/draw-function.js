@@ -209,7 +209,8 @@ function begin_right() {
     }
 
     $("#column-right").append("<div class='done' id='btn-done'></div>");
-    
+    $("#btn-done").click(show_activity);
+
     update_square_img(0); // 0->type
     $(".square").click(select_cloth);
 }
