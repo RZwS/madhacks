@@ -87,7 +87,6 @@ function select_cloth(e) {
         }
     } else if (current_location == 2) { // transportation
         console.log(id);
-        bucky.transportation = id;
         if (id < 6) {
             bucky.transportation = id;
             $(".car").hide();
