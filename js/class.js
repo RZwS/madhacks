@@ -34,6 +34,7 @@ class body {
         if (this.transportation == -1) {
             return 0;
         }
+        console.log(this.transportation);
         return this.carbon[2][this.transportation];
     }
 
