@@ -17,7 +17,8 @@ function create_pi() {
                     { label: "Transportation", y: bucky.get_trans_cal() },
                     { label: "Decoration", y: bucky.get_hat_cal() },
                     { label: "Cloth", y: bucky.get_cloth_cal() },
-                    { label: "Shoes", y: bucky.get_shoes_cal() }
+                    { label: "Shoes", y: bucky.get_shoes_cal() },
+                    { label: "Activities", y: bucky.get_activity_cal() }
                     // { label: "Others", y: 3 }
                 ]
         }]

@@ -182,11 +182,16 @@ function select_cloth(e) {
     }
 }
 
-function show_activity() {
+function show_result(e) {
+    var id = e.target.id.substr(e.target.id.length - 1, 1)
+    id = parseInt(id);
+    bucky.activity = id - 1;
+
     $("#main-wrap").append("<div id='final-evalu'></div>");
     $("#final-evalu").html("<img id='evalu-back' src='./../img/mix/report.png'></img>");
     $("#column-left").hide();
     $("#column-right").hide();
+    $("#activity-B").hide();
     $("#final-evalu").append("<div id='final-evalu-content'></div>");
     $("#final-evalu-content").html("<p>Your Carbon estimate is " +
         bucky.calculate_carbon() + " </p>");
@@ -197,3 +202,10 @@ function show_activity() {
     $(".canvasjs-chart-container").css("top", "200px");
     $(".canvasjs-chart-container").css("left", "-150px");
 }
+
+
+function show_activity() {
+    draw_activity();
+    $(".activity").click(show_result);
+}
+

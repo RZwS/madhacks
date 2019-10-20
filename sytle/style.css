@@ -204,3 +204,12 @@ html {
     width: 200px;
     height: 90px;
 }
+
+#activity-B {
+    z-index: 1000;
+}
+
+.activity {
+    left: 30%;
+    width: 60%;
+}

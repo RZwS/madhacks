@@ -6,13 +6,15 @@ class body {
         this.hat = [];
         this.cloth = cloth;
         this.shoes = shoes;
+        this.activity = -1;
         this.carbon = [
             [1, 2, 3, 4],
             [5, 6, 7, 8],
             [9, 10, 11, 12, 13, 14],
             [1, 2, 3, 4, 5, 6],
             [1, 2, 3, 4],
-            [5, 6, 7, 8]
+            [5, 6, 7, 8],
+            [1, 2, 3]
         ];
     }
 
@@ -61,8 +63,16 @@ class body {
         return this.carbon[5][this.shoes];
     }
 
+    get_activity_cal() {
+        if (this.activity == -1) {
+            return 0;
+        }
+        return this.carbon[6][this.activity];
+    }
+
     calculate_carbon() {
         return this.get_back_cal() + this.get_cloth_cal() + this.get_hat_cal() + 
-            this.get_shoes_cal() + this.get_skin_cal() + this.get_trans_cal();
+            this.get_shoes_cal() + this.get_skin_cal() + this.get_trans_cal() + 
+            this.get_activity_cal();
     }
 }

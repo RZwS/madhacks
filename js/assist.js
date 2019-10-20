@@ -12,34 +12,34 @@ function dragFromRight(e){
 
 
 function draw_activity() {
-    $("#column-left").append(
-        "<div id='activity-B' class='activity'><img src='./../img/activity/Page.png'\
-        class = 'activity' id='activity-background'></img></div>");
-    $("id='activity-background").css("position", "absolute");
-    $("#activity-B").css("margin-top", "100px");
+    $("#main-wrap").append(
+        "<div id='activity-B' class='ab-class'></div>");
+    $("#activity-B").css("background", "url('./../img/activity/activityPage.png'");
+    $("#activity-B").css("background-size", "cover");
+    $("#activity-B").css("top", "100px");
+    $("#activity-B").css("width", "40%");
+    $("#activity-B").css("left", "30%");
+    $("#activity-B").css("height", "100%");
    
 
-    $("#column-left").append(
-        "<div id='activity-1' class='activity'><img src='./../img/activity/activity1.png'\
-        class = 'activity' id='activity-img-1'></img></div>");
-    $("#activity-img-1").css("width", "150px");
-    $("#activity-1").css("margin-top", "200px");
+    $("#activity-B").append(
+        "<div id='activity-1' class='activity ab-class'><img src='./../img/activity/activity1.png'\
+        class='activity' id='activity-img-1'></img></div>");
+    
+    // $("#activity-img-1").css("width", "150px");
+    $("#activity-1").css("top", "35%");
     
 
-    $("#column-left").append(
-        "<div id='activity-2' class='activity'><img src='./../img/activity/activity2.png'\
-        class = 'activity' id='activity-img-2'></img></div>");
-        $("#activity-img-2").css("width", "150px");
-        $("#activity-2").css("margin-top", "250px");
+    $("#activity-B").append(
+        "<div id='activity-2' class='activity ab-class'><img src='./../img/activity/activity2.png'\
+        class='activity' id='activity-img-2'></img></div>");
+    // $("#activity-img-2").css("width", "150px");
+    $("#activity-2").css("top", "50%");
        
 
-    $("#column-left").append(
-        "<div id='activity-3' class='activity'><img src='./../img/activity/activity3.png'\
-        class = 'activity' id='activity-img-1'></img></div>");
-     $("#activity-img-3").css("width", "150px");
-    $("#activity-3").css("margin-top", "200px");
-    
-   
-
-    $(".shoes").hide();
+    $("#activity-B").append(
+        "<div id='activity-3' class='activity ab-class'><img src='./../img/activity/activity3.png'\
+        class='activity' id='activity-img-3'></img></div>");
+    // $("#activity-img-3").css("width", "150px");
+    $("#activity-3").css("top", "65%");
 }
