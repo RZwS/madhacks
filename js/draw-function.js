@@ -54,14 +54,28 @@ function update_square_img(type) {
         ];
     } else if (type == 6) { // skin
         imgList = [
-            "./../img/bucky/buckyBlack.png",
-            "./../img/bucky/buckyBrown.png",
-            "./../img/bucky/buckyYellow.png",
+            "./../img/bucky/IconBlack.png",
+            "./../img/bucky/IconBrown.png",
+            "./../img/bucky/IconYellow.png",
+            "./../img/bucky/IconRed.png",
             "./../img/home/resetIcon.png",
             "./../img/home/homeIcon.png"
         ];
     }
 
+    if (type == 0) {
+        $("#btn-done").show();
+    } else {
+        $("#btn-done").hide();
+    }
+
+    if (imgList.length == 6) {
+        $("#square-6").hide();
+        $("#square-7").hide();
+    } else if (imgList.length == 8) {
+        $("#square-6").toggle();
+        $("#square-7").toggle();
+    }
     for (var i = imgList.length; i < 8; i++) {
         imgList.push(null);
     } // repair
@@ -115,7 +129,6 @@ function draw_car() {
     $("#car-6").css("margin-left", "209px");
 
     $(".car").hide();
-    $("#car-img-2").toggle();
 }
 
 function draw_shoes() {
@@ -148,7 +161,6 @@ function draw_shoes() {
     $("#shoes-4").css("margin-left", "56px");
 
     $(".shoes").hide();
-    // $("#shoes-img-4").toggle();
 }
 
 function draw_clothing() {
@@ -181,7 +193,6 @@ function draw_clothing() {
     $("#cloth-img-4").css("width", "800px");
     
     $(".cloth").hide();
-    // $("#cloth-img-4").toggle();
 }
 
 
@@ -196,6 +207,9 @@ function begin_right() {
         }
         $("#column-right").append("<span class=\"svg-span\"></span>");
     }
+
+    $("#column-right").append("<div class='done' id='btn-done'></div>");
+    
     update_square_img(0); // 0->type
     $(".square").click(select_cloth);
 }
@@ -204,12 +218,13 @@ function begin_draw() {
     $("#column-left").html(
         "<img class=\"bucky\" id=\"bucky-1\"src=\"./../img/bucky/buckyBlack.png\"></img>\
         <img class=\"bucky\" id=\"bucky-2\"src=\"./../img/bucky/buckyBrown.png\"></img>\
-        <img class=\"bucky\" id=\"bucky-3\"src=\"./../img/bucky/buckyYellow.png\"></img>"
+        <img class=\"bucky\" id=\"bucky-3\"src=\"./../img/bucky/buckyYellow.png\"></img>\
+        <img class=\"bucky\" id=\"bucky-4\"src=\"./../img/bucky/buckyRed.png\"></img>"
         );
     $(".bucky").attr("width", "600px");
     $(".bucky").hide();
     $("#bucky-1").show();
-    document.body.style.background = "url('./../img/background/background_luxuryHotel.png')";
+    // document.body.style.background = "url('./../img/background/background_luxuryHotel.png')";
     
     begin_right();
     draw_shoes();
