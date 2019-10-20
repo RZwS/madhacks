@@ -1,9 +1,9 @@
 html {
     box-sizing: border-box;
+    background-color: #9aa5b0;
     background-size:100% 100%;
     background-repeat:no-repead;
 }
-
 
 #main-wrap {
     margin-top: 30px;
@@ -84,4 +84,13 @@ html {
 #car-img-2 {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+#btn-done {
+    width: 246px;
+    height: 120px;
+    background: url("./../img/home/finish.png");
+    border: 3px solid white;
+    background-size:100% 100%;
+    background-repeat:no-repead;
 }

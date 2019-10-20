@@ -139,14 +139,15 @@ function select_cloth(e) {
         }
 
     } else if (current_location == 6) { // skin
-        if (id <= 2) {
+        if (id <= 3) {
             bucky.skin = id;
             $(".bucky").hide();
             $("#bucky-" + (id + 1)).toggle();
-        } else if (id == 3) {
-            bucky.skin = -1;
-            $(".bucky").hide();
         } else if (id == 4) {
+            bucky.skin = 0;
+            $(".bucky").hide();
+            $("#bucky-1").toggle();
+        } else if (id == 5) {
             current_location = 0;
             update_square_img();
         }
