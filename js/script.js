@@ -2,7 +2,7 @@ var current_location = 0;
 var bucky = new body(0, -1, -1, -1, -1, -1);
 
 $("#main-wrap").html("<div id='b-img'>\
-    <img src='./../img/firstPage/backgroundOrg.png' id='test' class=''></img></div>");
+    <img src='./img/firstPage/backgroundOrg.png' id='test' class=''></img></div>");
 
 setTimeout(test, 5);
 setTimeout(show_gray_picture, 3000);
@@ -29,7 +29,7 @@ function test3() {
 
 function show_gray_picture() {
     $("#main-wrap").prepend("<div id='a-img'>\
-        <img src='./../img/firstPage/background.png' id='test2' class='front-img'></img></div>");
+        <img src='./img/firstPage/background.png' id='test2' class='front-img'></img></div>");
     setTimeout(test2, 5);
     setTimeout(test3, 5);
 }
@@ -73,28 +73,28 @@ function select_cloth(e) {
             case 0:
                 bucky.background = id;
                 document.body.style.background = 
-                    "url(./../img/background/background_luxuryHotel.png) \
+                    "url(./img/background/background_luxuryHotel.png) \
                     no-repeat center center fixed";
                 document.body.style.backgroundSize = "cover";
                 break;
             case 1:
                 bucky.background = id;
                 document.body.style.background = 
-                    "url(./../img/background/background_nature.png) \
+                    "url(./img/background/background_nature.png) \
                     no-repeat center center fixed";
                     document.body.style.backgroundSize = "cover";
                 break;
             case 2:
                 bucky.background = id;
                 document.body.style.background = 
-                    "url(./../img/background/background_rural.png) \
+                    "url(./img/background/background_rural.png) \
                     no-repeat center center fixed";
                     document.body.style.backgroundSize = "cover";
                 break;
             case 3:
                 bucky.background = id;
                 document.body.style.background = 
-                    "url(./../img/background/background_urban.png) \
+                    "url(./img/background/background_urban.png) \
                     no-repeat center center fixed";
                     document.body.style.backgroundSize = "cover";
                 break;
@@ -188,14 +188,14 @@ function show_result(e) {
     bucky.activity = id - 1;
 
     $("#main-wrap").append("<div id='final-evalu'></div>");
-    $("#final-evalu").html("<img id='evalu-back' src='./../img/mix/report.png'></img>");
+    $("#final-evalu").html("<img id='evalu-back' src='./img/mix/report.png'></img>");
     $("#column-left").hide();
     $("#column-right").hide();
     $("#activity-B").hide();
     $("#final-evalu").append("<div id='final-evalu-content'></div>");
     $("#final-evalu-content").html("<p id='evalu-content'>Your Carbon estimate is " +
         bucky.calculate_carbon() + " </p>");
-    $("#final-evalu").append("<img src='./../img/mix/evalu-logo.png' id='evalu-logo'></img>");
+    $("#final-evalu").append("<img src='./img/mix/evalu-logo.png' id='evalu-logo'></img>");
     create_pi();
 }
 

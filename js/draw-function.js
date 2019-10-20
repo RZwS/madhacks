@@ -4,72 +4,72 @@ function update_square_img(type) {
     var imgList;
     if (type == 0) { // home
         imgList = [
-            "./../img/home/colorIcon.png",
-            "./../img/home/roomIcon.png",
-            "./../img/home/shoesIcon.png",
-            "./../img/home/clothIcon.png",
-            "./../img/home/decorationIcon.png",
-            "./../img/home/transportationIcon.png"
+            "./img/home/colorIcon.png",
+            "./img/home/roomIcon.png",
+            "./img/home/shoesIcon.png",
+            "./img/home/clothIcon.png",
+            "./img/home/decorationIcon.png",
+            "./img/home/transportationIcon.png"
         ];
     } else if (type == 1) { // background
         imgList = [
-            "./../img/background/background_luxuryHotel.png", 
-            "./../img/background/background_nature.png",
-            "./../img/background/background_rural.png", 
-            "./../img/background/background_urban.png",
-            "./../img/home/resetIcon.png",
-            "./../img/home/homeIcon.png"
+            "./img/background/background_luxuryHotel.png", 
+            "./img/background/background_nature.png",
+            "./img/background/background_rural.png", 
+            "./img/background/background_urban.png",
+            "./img/home/resetIcon.png",
+            "./img/home/homeIcon.png"
         ];
     } else if (type == 2) { // transportation
         imgList = [
-            "./../img/transportation/1.png",
-            "./../img/transportation/2.png",
-            "./../img/transportation/3.png",
-            "./../img/transportation/4.png",
-            "./../img/transportation/5.png",
-            "./../img/transportation/6.png",
-            "./../img/home/resetIcon.png",
-            "./../img/home/homeIcon.png"
+            "./img/transportation/1.png",
+            "./img/transportation/2.png",
+            "./img/transportation/3.png",
+            "./img/transportation/4.png",
+            "./img/transportation/5.png",
+            "./img/transportation/6.png",
+            "./img/home/resetIcon.png",
+            "./img/home/homeIcon.png"
         ];
 
     } else if (type == 3) { // hat
         imgList = [
-            "./../img/Decoration/flag.png",
-            "./../img/Decoration/flowe.png",
-            "./../img/Decoration/football.png",
-            "./../img/Decoration/hat.png",
-            "./../img/Decoration/hat2.png",
-            "./../img/Decoration/pikachu.png",
-            "./../img/home/resetIcon.png",
-            "./../img/home/homeIcon.png"
+            "./img/Decoration/flag.png",
+            "./img/Decoration/flowe.png",
+            "./img/Decoration/football.png",
+            "./img/Decoration/hat.png",
+            "./img/Decoration/hat2.png",
+            "./img/Decoration/pikachu.png",
+            "./img/home/resetIcon.png",
+            "./img/home/homeIcon.png"
         ];
 
     } else if (type == 4) { // cloth
         imgList = [
-            "./../img/outfit/cloth1Icon.png",
-            "./../img/outfit/cloth2Icon.png",
-            "./../img/outfit/cloth3Icon.png",
-            "./../img/outfit/cloth4Icon.png",
-            "./../img/home/resetIcon.png",
-            "./../img/home/homeIcon.png"
+            "./img/outfit/cloth1Icon.png",
+            "./img/outfit/cloth2Icon.png",
+            "./img/outfit/cloth3Icon.png",
+            "./img/outfit/cloth4Icon.png",
+            "./img/home/resetIcon.png",
+            "./img/home/homeIcon.png"
         ];
     } else if (type == 5) { // shoes
         imgList = [
-            "./../img/shoes/shoe1.png",
-            "./../img/shoes/shoe2.png",
-            "./../img/shoes/shoe3.png",
-            "./../img/shoes/shoe4.png",
-            "./../img/home/resetIcon.png",
-            "./../img/home/homeIcon.png"
+            "./img/shoes/shoe1.png",
+            "./img/shoes/shoe2.png",
+            "./img/shoes/shoe3.png",
+            "./img/shoes/shoe4.png",
+            "./img/home/resetIcon.png",
+            "./img/home/homeIcon.png"
         ];
     } else if (type == 6) { // skin
         imgList = [
-            "./../img/bucky/IconBlack.png",
-            "./../img/bucky/IconBrown.png",
-            "./../img/bucky/IconYellow.png",
-            "./../img/bucky/IconRed.png",
-            "./../img/home/resetIcon.png",
-            "./../img/home/homeIcon.png"
+            "./img/bucky/IconBlack.png",
+            "./img/bucky/IconBrown.png",
+            "./img/bucky/IconYellow.png",
+            "./img/bucky/IconRed.png",
+            "./img/home/resetIcon.png",
+            "./img/home/homeIcon.png"
         ];
     }
 
@@ -97,42 +97,42 @@ function update_square_img(type) {
 
 function draw_decoration() {
     $("#column-left").append(
-        "<div id='dec-1' class='ab-class'><img src='./../img/decoration/flag.png'\
+        "<div id='dec-1' class='ab-class'><img src='./img/decoration/flag.png'\
         class = 'dec' id='dec-img-1'></img></div>");
     $("#dec-img-1").css("width", "300px");
     $("#dec-1").css("margin-top", "-100px");
     $("#dec-1").css("margin-left", "0px");
 
     $("#column-left").append(
-        "<div id='dec-2' class='ab-class'><img src='./../img/decoration/flowe.png'\
+        "<div id='dec-2' class='ab-class'><img src='./img/decoration/flowe.png'\
         class = 'dec' id='dec-img-2'></img></div>");
     $("#dec-img-2").css("width", "200px");
     $("#dec-2").css("margin-top", "240px");
     $("#dec-2").css("margin-left", "329px");
 
     $("#column-left").append(
-        "<div id='dec-3' class='ab-class'><img src='./../img/decoration/football.png'\
+        "<div id='dec-3' class='ab-class'><img src='./img/decoration/football.png'\
         class = 'dec' id='dec-img-3'></img></div>");
     $("#dec-img-3").css("width", "150px");
     $("#dec-3").css("margin-top", "310px");
     $("#dec-3").css("margin-left", "330px");
 
     $("#column-left").append(
-        "<div id='dec-4' class='ab-class'><img src='./../img/decoration/hat.png'\
+        "<div id='dec-4' class='ab-class'><img src='./img/decoration/hat.png'\
         class = 'dec' id='dec-img-4'></img></div>");
     $("#dec-img-4").css("width", "250px");
     $("#dec-4").css("margin-top", "-46px");
     $("#dec-4").css("margin-left", "92px");
 
     $("#column-left").append(
-        "<div id='dec-5' class='ab-class'><img src='./../img/decoration/hat2.png'\
+        "<div id='dec-5' class='ab-class'><img src='./img/decoration/hat2.png'\
         class = 'dec' id='dec-img-5'></img></div>");
     $("#dec-img-5").css("width", "200px");
     $("#dec-5").css("margin-top", "-60px");
     $("#dec-5").css("margin-left", "230px");
 
     $("#column-left").append(
-        "<div id='dec-6' class='ab-class'><img src='./../img/decoration/pikachu.png'\
+        "<div id='dec-6' class='ab-class'><img src='./img/decoration/pikachu.png'\
         class = 'dec' id='dec-img-6'></img></div>");
     $("#dec-img-6").css("width", "200px");
     $("#dec-6").css("margin-top", "358px");
@@ -144,42 +144,42 @@ function draw_decoration() {
 
 function draw_car() {
     $("#column-left").append(
-        "<div id='car-1' class='ab-class'><img src='./../img/transportation/1.png'\
+        "<div id='car-1' class='ab-class'><img src='./img/transportation/1.png'\
         class = 'car' id='car-img-1'></img></div>");
     $("#car-img-1").css("width", "400px");
     $("#car-1").css("margin-top", "230px");
     $("#car-1").css("margin-left", "255px");
 
     $("#column-left").append(
-        "<div id='car-2' class='ab-class'><img src='./../img/transportation/2.png'\
+        "<div id='car-2' class='ab-class'><img src='./img/transportation/2.png'\
         class = 'car' id='car-img-2'></img></div>");
     $("#car-img-2").css("width", "300px");
     $("#car-2").css("margin-top", "283px");
     $("#car-2").css("margin-left", "283px");
 
     $("#column-left").append(
-        "<div id='car-3' class='ab-class'><img src='./../img/transportation/3.png'\
+        "<div id='car-3' class='ab-class'><img src='./img/transportation/3.png'\
         class = 'car' id='car-img-3'></img></div>");
     $("#car-img-3").css("width", "400px");
     $("#car-3").css("margin-top", "243px");
     $("#car-3").css("margin-left", "269px");
 
     $("#column-left").append(
-        "<div id='car-4' class='ab-class'><img src='./../img/transportation/4.png'\
+        "<div id='car-4' class='ab-class'><img src='./img/transportation/4.png'\
         class = 'car' id='car-img-4'></img></div>");
     $("#car-img-4").css("width", "400px");
     $("#car-4").css("margin-top", "213px");
     $("#car-4").css("margin-left", "269px");
 
     $("#column-left").append(
-        "<div id='car-5' class='ab-class'><img src='./../img/transportation/5.png'\
+        "<div id='car-5' class='ab-class'><img src='./img/transportation/5.png'\
         class = 'car' id='car-img-5'></img></div>");
     $("#car-img-5").css("width", "400px");
     $("#car-5").css("margin-top", "243px");
     $("#car-5").css("margin-left", "269px");
 
     $("#column-left").append(
-        "<div id='car-6' class='ab-class'><img src='./../img/transportation/6.png'\
+        "<div id='car-6' class='ab-class'><img src='./img/transportation/6.png'\
         class = 'car' id='car-img-6'></img></div>");
     $("#car-img-6").css("width", "400px");
     $("#car-6").css("margin-top", "263px");
@@ -190,28 +190,28 @@ function draw_car() {
 
 function draw_shoes() {
     $("#column-left").append(
-        "<div id='shoes-1' class='ab-class'><img src='./../img/shoes/shoe1.png'\
+        "<div id='shoes-1' class='ab-class'><img src='./img/shoes/shoe1.png'\
         class = 'shoes' id='shoes-img-1'></img></div>");
     $("#shoes-img-1").css("width", "450px");
     $("#shoes-1").css("margin-top", "315px");
     $("#shoes-1").css("margin-left", "56px");
 
     $("#column-left").append(
-        "<div id='shoes-2' class='ab-class'><img src='./../img/shoes/shoe2.png'\
+        "<div id='shoes-2' class='ab-class'><img src='./img/shoes/shoe2.png'\
         class = 'shoes' id='shoes-img-2'></img></div>");
     $("#shoes-img-2").css("width", "450px");
     $("#shoes-2").css("margin-top", "309px");
     $("#shoes-2").css("margin-left", "62px");
 
     $("#column-left").append(
-        "<div id='shoes-3' class='ab-class'><img src='./../img/shoes/shoe3.png'\
+        "<div id='shoes-3' class='ab-class'><img src='./img/shoes/shoe3.png'\
         class = 'shoes' id='shoes-img-3'></img></div>");
     $("#shoes-img-3").css("width", "450px");
     $("#shoes-3").css("margin-top", "311px");
     $("#shoes-3").css("margin-left", "57px");
 
     $("#column-left").append(
-        "<div id='shoes-4' class='ab-class'><img src='./../img/shoes/shoe4.png'\
+        "<div id='shoes-4' class='ab-class'><img src='./img/shoes/shoe4.png'\
         class = 'shoes' id='shoes-img-4'></img></div>");
     $("#shoes-img-4").css("width", "450px");
     $("#shoes-4").css("margin-top", "315px");
@@ -222,28 +222,28 @@ function draw_shoes() {
 
 function draw_clothing() {
     $("#column-left").append(
-        "<div id='cloth-1' class='ab-class'><img src='./../img/outfit/cloth1.png'\
+        "<div id='cloth-1' class='ab-class'><img src='./img/outfit/cloth1.png'\
          class='cloth' id='cloth-img-1'></img></div>");
     $("#cloth-1").css("margin-top", "161px");
     $("#cloth-1").css("margin-left", "-48px");
     $("#cloth-img-1").css("width", "600px");
 
     $("#column-left").append(
-        "<div id='cloth-2' class='ab-class'><img src='./../img/outfit/cloth2.png'\
+        "<div id='cloth-2' class='ab-class'><img src='./img/outfit/cloth2.png'\
          class='cloth' id='cloth-img-2'></img></div>");
     $("#cloth-2").css("margin-top", "-5px");
     $("#cloth-2").css("margin-left", "-101px");
     $("#cloth-img-2").css("width", "800px");
 
     $("#column-left").append(
-        "<div id='cloth-3' class='ab-class'><img src='./../img/outfit/cloth3.png'\
+        "<div id='cloth-3' class='ab-class'><img src='./img/outfit/cloth3.png'\
          class='cloth' id='cloth-img-3'></img></div>");
     $("#cloth-3").css("margin-top", "0px");
     $("#cloth-3").css("margin-left", "-101px");
     $("#cloth-img-3").css("width", "800px");
 
     $("#column-left").append(
-        "<div id='cloth-4' class='ab-class'><img src='./../img/outfit/cloth4.png'\
+        "<div id='cloth-4' class='ab-class'><img src='./img/outfit/cloth4.png'\
          class='cloth' id='cloth-img-4'></img></div>");
     $("#cloth-4").css("margin-top", "0px");
     $("#cloth-4").css("margin-left", "-101px");
@@ -274,10 +274,10 @@ function begin_right() {
 
 function begin_draw() {
     $("#column-left").html(
-        "<img class=\"bucky\" id=\"bucky-1\"src=\"./../img/bucky/buckyBlack.png\"></img>\
-        <img class=\"bucky\" id=\"bucky-2\"src=\"./../img/bucky/buckyBrown.png\"></img>\
-        <img class=\"bucky\" id=\"bucky-3\"src=\"./../img/bucky/buckyYellow.png\"></img>\
-        <img class=\"bucky\" id=\"bucky-4\"src=\"./../img/bucky/buckyRed.png\"></img>"
+        "<img class=\"bucky\" id=\"bucky-1\"src=\"./img/bucky/buckyBlack.png\"></img>\
+        <img class=\"bucky\" id=\"bucky-2\"src=\"./img/bucky/buckyBrown.png\"></img>\
+        <img class=\"bucky\" id=\"bucky-3\"src=\"./img/bucky/buckyYellow.png\"></img>\
+        <img class=\"bucky\" id=\"bucky-4\"src=\"./img/bucky/buckyRed.png\"></img>"
         );
     $(".bucky").attr("width", "600px");
     $(".bucky").hide();
