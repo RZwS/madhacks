@@ -33,6 +33,16 @@ function update_square_img(type) {
         ];
 
     } else if (type == 3) { // hat
+        imgList = [
+            "./../img/Decoration/flag.png",
+            "./../img/Decoration/flowe.png",
+            "./../img/Decoration/football.png",
+            "./../img/Decoration/hat.jpg",
+            "./../img/Decoration/hat2.png",
+            "./../img/Decoration/pikachu.png",
+            "./../img/home/resetIcon.png",
+            "./../img/home/homeIcon.png"
+        ];
 
     } else if (type == 4) { // cloth
         imgList = [
@@ -225,7 +235,6 @@ function begin_draw() {
     $(".bucky").attr("width", "600px");
     $(".bucky").hide();
     $("#bucky-1").show();
-    // document.body.style.background = "url('./../img/background/background_luxuryHotel.png')";
     
     begin_right();
     draw_shoes();
