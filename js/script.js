@@ -31,7 +31,7 @@ function show_gray_picture() {
     $("#main-wrap").prepend("<div id='a-img'>\
         <img src='./../img/firstPage/background.png' id='test2' class='front-img'></img></div>");
     setTimeout(test2, 5);
-    setTimeout(test3, 3000);
+    setTimeout(test3, 5);
 }
 
 
@@ -193,14 +193,10 @@ function show_result(e) {
     $("#column-right").hide();
     $("#activity-B").hide();
     $("#final-evalu").append("<div id='final-evalu-content'></div>");
-    $("#final-evalu-content").html("<p>Your Carbon estimate is " +
+    $("#final-evalu-content").html("<p id='evalu-content'>Your Carbon estimate is " +
         bucky.calculate_carbon() + " </p>");
     $("#final-evalu").append("<img src='./../img/mix/evalu-logo.png' id='evalu-logo'></img>");
-    // $("#final-evalu").append("<div class='' id='evalu-chart'></div>");
     create_pi();
-    $(".canvasjs-chart-container").css("position", "absolute");
-    $(".canvasjs-chart-container").css("top", "200px");
-    $(".canvasjs-chart-container").css("left", "-150px");
 }
 
 

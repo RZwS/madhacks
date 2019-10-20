@@ -1,9 +1,19 @@
 function create_pi() {
     var options = {
         backgroundColor: null,
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        },
         // title: {
         //     text: "Your Carbon Emission is " + bucky.calculate_carbon() + "."
         // },
+
         data: [{
                 type: "pie",
                 startAngle: 45,
@@ -23,6 +33,6 @@ function create_pi() {
                 ]
         }]
     };
-    $("#main-wrap").append("<div id='canvas-draw'></div>")
+    $("#final-evalu").prepend("<div id='canvas-draw'></div>")
     $("#canvas-draw").CanvasJSChart(options);
 }

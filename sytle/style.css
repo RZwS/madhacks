@@ -105,16 +105,24 @@ html {
 
 #evalu-back {
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     display: block;
-    width: 1024px;
+    margin-top: -100px;
+    width: 1200px;
 }
 
 #final-evalu div {
     position: absolute;
-    font-size: 24px;
-    left: 320px;
-    top: 200px;
+    font-size: 28px;
+    /* left: 20%;
+    top: 25%; */
+}
+
+#evalu-content {
+    position: absolute;
+    width: 300px;
+    left: 650px;
+    top: -500px;
 }
 
 #evalu-logo {
@@ -123,43 +131,6 @@ html {
     left: 650px;
     top: 300px;
 }
-
-
-/**CSS Animation - Color to Black and White Photo
- * The first commented line is your dabblet’s title
- */
-
- /* @keyframes goGray{
-	0%{
-	filter: grayscale(0%);
-	-webkit-filter: grayscale(0%);
-	-moz-filter: grayscale(0%);
-	-ms-filter: grayscale(0%);
-	-o-filter: grayscale(0%);
-	}
-	99%{
-	filter: grayscale(100%);
-	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	-ms-filter: grayscale(100%);
-	-o-filter: grayscale(100%);
-	}
-}
-
-@keyframes unGray{
-	100%{filter: grayscale(0%);}
-	0%{filter: grayscale(100%);}
-}
-#front-img {
-	width: 100%;
-}
-#front-img.desaturate{animation: goGray 7s 1;}
-
-#front-img.saturate{animation: unGray 7s 1;}
-
-#front-img.gray{filter: grayscale(100%);}
-
-#front-img.ungray{filter: grayscale(0%);} */
 
 #b-img img{
     z-index: 3;
@@ -212,4 +183,10 @@ html {
 .activity {
     left: 30%;
     width: 60%;
+}
+
+.canvasjs-chart-container {
+    position: absolute;
+    left: 150px;
+    top: 200px;
 }
