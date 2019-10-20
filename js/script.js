@@ -156,4 +156,9 @@ function show_activity() {
     $("#final-evalu-content").html("<p>Your Carbon estimate is " +
         bucky.calculate_carbon() + " </p>");
     $("#final-evalu").append("<img src='./../img/mix/evalu-logo.png' id='evalu-logo'></img>");
+    // $("#final-evalu").append("<div class='' id='evalu-chart'></div>");
+    create_pi();
+    $(".canvasjs-chart-container").css("position", "absolute");
+    $(".canvasjs-chart-container").css("top", "190px");
+    $(".canvasjs-chart-container").css("left", "-150px");
 }
