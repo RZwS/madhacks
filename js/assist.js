@@ -17,9 +17,9 @@ function draw_activity() {
     $("#activity-B").css("background", "url('./../img/activity/activityPage.png'");
     $("#activity-B").css("background-size", "cover");
     $("#activity-B").css("top", "100px");
-    $("#activity-B").css("width", "40%");
+    $("#activity-B").css("width", "60%");
     $("#activity-B").css("left", "30%");
-    $("#activity-B").css("height", "100%");
+    $("#activity-B").css("height", "60%");
    
 
     $("#activity-B").append(

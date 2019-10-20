@@ -254,9 +254,9 @@ function draw_clothing() {
 
 
 function begin_right() {
-    $("#column-right").html("<div class=\"content\" id=\"clothing-type\"></div>");
-    $("#clothing-type").html("<p>Hat</p>");
-    console.log("df");
+    // $("#column-right").html("<div class=\"content\" id=\"clothing-type\"></div>");
+    // $("#clothing-type").html("<p>Hat</p>");
+    // console.log("df");
 
     for (var i = 0; i < 4; i++) {
         for (var j = 0; j < 2; j++) {
